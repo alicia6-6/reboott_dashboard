@@ -11,7 +11,7 @@ interface Shipment {
   eta: string;       
 }
 
-// 🌐 실배포된 Render 백엔드 주소 (본인 주소로 유지되어 있는지 확인하세요!)
+// 🌐 실배포된 Render 백엔드 주소
 const BACKEND_URL = 'https://reboott-backend.onrender.com';
 
 export default function App() {
@@ -299,7 +299,7 @@ export default function App() {
                             <input type="date" value={shipment.eta} onChange={(e) => handleUpdateShipment(shipment.id, shipment.status, e.target.value)} className="border rounded p-1 bg-white text-xs focus:ring-2 focus:ring-blue-500 text-gray-900" />
                           </td>
                           <td className="p-4">
-                            {/* ❌ [DELETE 모듈] DB 삭제 버턴 */}
+                            {/* ❌ [DELETE 모듈] DB 삭제 버튼 */}
                             <button onClick={() => handleDeleteShipment(shipment.id)} className="text-xs text-red-600 bg-red-50 hover:bg-red-100 border border-red-200 px-2 py-1 rounded transition-colors">삭제</button>
                           </td>
                         </tr>
@@ -308,7 +308,7 @@ export default function App() {
                   </table>
                 </div>
               </section>
-            </>
+            </main>
           )}
         </>
       )}
